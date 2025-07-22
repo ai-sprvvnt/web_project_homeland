@@ -30,3 +30,28 @@
   letter-spacing: 2px;
   color: #ffffff;
 }
+
+/* Tablet: hasta 1023px */
+@media screen and (max-width: 1023px) {
+  .header__logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header__subtitle {
+    font-size: 14px;
+  }
+}
+
+/* Móvil: hasta 543px */
+@media screen and (max-width: 543px) {
+  .header__logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header__subtitle {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}

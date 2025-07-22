@@ -13,3 +13,10 @@
   color: #ffffff;
   margin: 0;
 }
+
+@media screen and (max-width: 543px) {
+  .footer__text {
+    font-size: 12px;
+    text-align: center;
+  }
+}
