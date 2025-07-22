@@ -1,0 +1,15 @@
+.footer {
+  background-color: #2a2c2f;
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.footer__text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
