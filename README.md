@@ -44,12 +44,6 @@ Se trata de una galería digital responsiva titulada **“TripleTen Art Gallery�
 
 ---
 
-## 🔗 Enlace al sitio en GitHub Pages
-
-👉 [Ver proyecto en vivo](https://ai-sprvvnt.github.io/web_project_homeland/)
-
----
-
 ## 👨‍💻 Autor
 
 Felipe García  
