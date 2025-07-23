@@ -1,0 +1,6 @@
+.page {
+  background-color: #2a2c2f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
