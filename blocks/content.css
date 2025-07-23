@@ -2,7 +2,7 @@
   background-color: #2a2c2f;
   color: #ffffff;
   font-family: "Inter", sans-serif;
-  padding: 100px 80px;
+  padding: 20px 20px;
 }
 
 .content__section {
@@ -12,7 +12,7 @@
 
 .content__content {
   max-width: 830px;
-  /*margin: 0 auto;*/
+  margin: 80px;
 }
 
 .content__logo-block {
@@ -71,7 +71,12 @@
 /* Tablet */
 @media screen and (max-width: 1023px) {
   .content {
-    padding: 80px 40px;
+    padding: 20px 0px;
+  }
+
+  .content__content {
+    max-width: 680px;
+    margin: 40px;
   }
 
   .content__quote-heading {
@@ -79,18 +84,22 @@
   }
 
   .content__quote {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .content__text {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
 /* Móvil */
 @media screen and (max-width: 543px) {
   .content {
-    padding: 64px 20px;
+    padding: 10px 0px;
+  }
+
+  .content__content {
+    margin: 10px 20px;
   }
 
   .content__quote-heading {
