@@ -1,52 +1,52 @@
-.intro {
+.content {
   background-color: #2a2c2f;
   color: #ffffff;
   font-family: "Inter", sans-serif;
   padding: 100px 80px;
 }
 
-.intro__section {
+.content__section {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.intro__content {
+.content__content {
   max-width: 830px;
   /*margin: 0 auto;*/
 }
 
-.intro__logo-block {
+.content__logo-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
 
-.intro__logo {
+.content__logo {
   width: 40px;
   height: 40px;
 }
 
-.intro__subtitle {
+.content__subtitle {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.intro__quote-heading,
-.intro__quote,
-.intro__text {
+.content__quote-heading,
+.content__quote,
+.content__text {
   max-width: 830px;
 }
 
-.intro__quote-heading {
+.content__quote-heading {
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 24px;
 }
 
-.intro__quote {
+.content__quote {
   font-family: "Noto Serif", serif;
   font-size: 24px;
   line-height: 1.5;
@@ -55,14 +55,14 @@
   padding-left: 0;
 }
 
-.intro__quote-author {
+.content__quote-author {
   display: block;
   margin-top: 18px;
   text-align: right;
   font-style: normal;
 }
 
-.intro__text {
+.content__text {
   font-size: 18px;
   line-height: 1.6;
   max-width: 830px;
@@ -70,43 +70,43 @@
 
 /* Tablet */
 @media screen and (max-width: 1023px) {
-  .intro {
+  .content {
     padding: 80px 40px;
   }
 
-  .intro__quote-heading {
+  .content__quote-heading {
     font-size: 32px;
   }
 
-  .intro__quote {
+  .content__quote {
     font-size: 18px;
   }
 
-  .intro__text {
+  .content__text {
     font-size: 16px;
   }
 }
 
 /* Móvil */
 @media screen and (max-width: 543px) {
-  .intro {
+  .content {
     padding: 64px 20px;
   }
 
-  .intro__quote-heading {
+  .content__quote-heading {
     font-size: 24px;
   }
 
-  .intro__quote {
+  .content__quote {
     font-size: 16px;
     line-height: 1.4;
   }
 
-  .intro__quote-author {
+  .content__quote-author {
     font-size: 14px;
   }
 
-  .intro__text {
+  .content__text {
     font-size: 14px;
     line-height: 1.5;
   }
