@@ -1,0 +1,192 @@
+.places {
+  max-width: 1184px;
+  margin: 80px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.place {
+  /*display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;*/
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 90px 1fr 1fr auto; /* fila 1: cabeceras; 2-3: contenido; 4: botón */
+  column-gap: 40px;
+  row-gap: 48px;
+  align-items: start;
+}
+
+.place__content {
+  display: block;
+}
+
+/*.place__title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+}*/
+
+.place__title {
+  /*font-size: 44px;
+  line-height: 1.1;
+  font-weight: 900;
+  margin: 0 0 24px;*/
+
+  /*position: absolute;
+  top: 16px;
+  left: 16px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;*/
+
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  align-self: end;
+  margin: 0;
+  font-size: 44px; /* ajusta a lo que marque Figma */
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+/*.place__author {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 16px;
+}*/
+
+.place__artists {
+  grid-column: 4 / span 3;
+  grid-row: 1;
+  align-self: end;
+}
+
+.place__artists-heading {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #9aa0a6;
+  margin: 0 0 8px;
+}
+
+.place__artist {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ccc;
+  margin: 0 0 4px;
+}
+
+/*.place__image {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}*/
+
+.place__image-block {
+  /*display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;*/
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.place__content {
+  grid-column: 4 / span 3;
+  grid-row: 2 / span 2;
+}
+
+/*.place__paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+}*/
+
+/*.place__button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #027bff, #00c6ff);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+}*/
+
+/*.place__button {
+  display: inline-block;
+  width: 289px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 24px;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}*/
+
+.place__button {
+  grid-column: 1 / span 3;
+  grid-row: 4;
+  justify-self: start;
+  display: inline-block;
+  width: 289px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.place__button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 24px;
+  }
+  .place__title,
+  .place__artists,
+  .place__image-block,
+  .place__content,
+  .place__button {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 544px) {
+  .places {
+    padding: 0 16px;
+    gap: 56px;
+  }
+  .place__title {
+    font-size: 32px;
+  }
+}
