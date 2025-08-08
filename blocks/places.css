@@ -1,5 +1,6 @@
 .places {
   max-width: 1184px;
+  display: flex;
   margin: 80px auto;
   padding: 0 16px;
   display: flex;
@@ -12,65 +13,40 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: start;*/
-
+  max-width: 1180px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 90px 1fr 1fr auto; /* fila 1: cabeceras; 2-3: contenido; 4: botón */
-  column-gap: 40px;
-  row-gap: 48px;
+  grid-template-rows: 125px repeat(3, 1fr) 50px.;
+  grid-gap: 48px 40px;
   align-items: start;
 }
 
 .place__content {
   display: block;
+  line-height: 1.6;
+  grid-column: span 3;
+  grid-row: span 3;
+  margin: 0;
 }
 
-/*.place__title {
-  font-size: 32px;
-  font-weight: 900;
-  line-height: 1.2;
-  margin: 0;
-}*/
-
 .place__title {
-  /*font-size: 44px;
-  line-height: 1.1;
-  font-weight: 900;
-  margin: 0 0 24px;*/
-
-  /*position: absolute;
-  top: 16px;
-  left: 16px;
-  color: #fff;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 0;*/
-
-  grid-column: 1 / span 3;
+  grid-column: 1 / 4;
   grid-row: 1;
   align-self: end;
   margin: 0;
-  font-size: 44px; /* ajusta a lo que marque Figma */
+  font-size: 86px;
   line-height: 1.1;
   font-weight: 900;
 }
 
-/*.place__author {
-  font-size: 14px;
-  color: #ccc;
-  margin-bottom: 16px;
-}*/
-
 .place__artists {
-  grid-column: 4 / span 3;
+  grid-column: 4 /7;
   grid-row: 1;
   align-self: end;
 }
 
 .place__artists-heading {
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #9aa0a6;
@@ -78,40 +54,44 @@
 }
 
 .place__artist {
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 24px;
+  line-height: 22px;
   color: #ccc;
   margin: 0 0 4px;
 }
 
-/*.place__image {
+.place__image {
   width: 100%;
+  max-width: 480px;
+  height: 460px;
+  display: block;
   object-fit: cover;
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
-}*/
+  transition: opacity 0.3s ease;
+}
+
+.place__image:hover {
+  opacity: 0.5;
+}
 
 .place__image-block {
-  /*display: flex;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;*/
-  grid-column: 1 / span 3;
-  grid-row: 2 / span 2;
+  grid-column: 1 / 4;
+  grid-row: 2 / 5;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
 .place__content {
-  grid-column: 4 / span 3;
-  grid-row: 2 / span 2;
+  grid-column: 4 / 7;
+  grid-row: 2 / 5;
 }
 
-/*.place__paragraph {
-  font-size: 16px;
+.place__paragraph {
+  font-size: 18px;
   line-height: 1.5;
-}*/
+}
 
 /*.place__button {
   display: inline-block;
@@ -143,10 +123,10 @@
 }*/
 
 .place__button {
-  grid-column: 1 / span 3;
-  grid-row: 4;
+  grid-column: 1 / 3;
+  grid-row: 5;
   justify-self: start;
-  display: inline-block;
+  /*display: inline-block;*/
   width: 289px;
   height: 48px;
   line-height: 48px;
@@ -162,10 +142,44 @@
 }
 
 .place__button:hover {
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1279px) and (min-width: 768px) {
+  .place {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+
+  .place__title {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 36px;
+  }
+  .place__artists {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .place__image-block {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .place__content {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+  }
+
+  .place__button {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 543px) {
   .place {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -178,13 +192,6 @@
   .place__button {
     grid-column: 1;
     grid-row: auto;
-  }
-}
-
-@media (max-width: 544px) {
-  .places {
-    padding: 0 16px;
-    gap: 56px;
   }
   .place__title {
     font-size: 32px;
