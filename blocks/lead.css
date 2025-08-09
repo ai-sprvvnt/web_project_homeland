@@ -30,14 +30,11 @@
   display: block;
   width: 100%;
   height: auto;
-  /*margin: 0 auto;*/
   object-fit: cover;
 }
 
-/* Tablet: 768px diseño, breakpoint hasta 1023px */
 @media screen and (max-width: 1023px) {
   .lead {
-    /*padding: 0 40px;*/
     padding: 0;
     margin: 0;
     max-width: 100%;
@@ -50,7 +47,6 @@
 
   .lead__subtitle {
     font-size: 20px;
-    /*margin-bottom: 48px;*/
     max-width: 500px;
     text-align: center;
     margin: 48px auto;
@@ -64,7 +60,6 @@
   }
 }
 
-/* Móvil: 320px diseño, breakpoint hasta 543px */
 @media screen and (max-width: 543px) {
   .lead {
     padding: 0;
@@ -75,7 +70,6 @@
   .lead__title {
     font-size: 40px;
     max-width: 300px;
-    /*margin: 24px auto 16px;*/
     text-align: center;
 
     margin: 0 auto;
