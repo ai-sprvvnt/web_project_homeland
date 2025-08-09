@@ -1,9 +1,16 @@
 # Tripleten web_project_homeland
 
-# Sprint 5
+# Sprint 6
 
-Este proyecto fue desarrollado como parte del Sprint 5 del bootcamp de desarrollo web de TripleTen.  
-Se trata de una galería digital responsiva titulada **“TripleTen Art Gallery”**.
+Proyecto desarrollado como parte del Sprint 6 del bootcamp de desarrollo web.
+En esta entrega se amplía el proyecto del Sprint 5 añadiendo nuevas secciones 
+(photo-grid y places) y aplicando técnicas avanzadas de CSS Grid, degradados, 
+sombras, y un diseño completamente adaptativo para tres resoluciones principales:
+320px, 768px y 1280px.
+
+El sitio presenta una galería fotográfica y descripciones de ciudades vinculadas
+a los autores de la obra, con imágenes optimizadas y diseño responsivo que se adapta 
+suavemente a resoluciones intermedias.
 
 ---
 
@@ -20,27 +27,51 @@ Se trata de una galería digital responsiva titulada **“TripleTen Art Gallery�
 
 ## 🛠️ Tecnologías utilizadas
 
-- HTML5
-- CSS3
-- Normalize.css
-- Git + GitHub
-- Metodología BEM
-- EditorConfig
+- HTML5 – Estructura semántica del sitio.
+- CSS3 – Maquetación, BEM, Grid, Flexbox, media queries, degradados, sombras y object-fit.
+- Git / GitHub – Control de versiones y despliegue.
+- Figma – Diseño base y especificaciones.
 
 ---
 
 ## 📂 Estructura del proyecto
 
-/project-root/
+web_project_homeland/
 │
-├── /styles/
-│ ├── /blocks/
-│ └── /pages/
-├── /vendor/
-├── /fonts/
-├── /images/
-├── index.html
-└── README.md
+├── images/                # Imágenes optimizadas y renombradas según BEM
+├── pages/
+│   └── index.css           # Archivo CSS principal que importa todos los bloques
+├── blocks/                 # Archivos CSS por bloque según metodología BEM
+│   ├── page.css
+│   ├── header.css
+│   ├── content.css
+│   ├── lead.css
+│   ├── photo-grid.css
+│   ├── places.css          # Contenedor de la sección places
+│   ├── place.css           # Cada tarjeta de ciudad (nuevo Sprint 6)
+│   ├── footer.css
+│
+├── index.html              # Página principal
+├── README.md               # Documentación del proyecto
+├── favicon.ico             # Ícono del sitio
+└── vendor/
+    ├── normalize.css
+    └── fonts.css
+
+---
+
+📏 Alcance del Sprint 6
+- Implementación de sección photo-grid: cuadrícula de imágenes responsiva.
+- Implementación de sección places: tarjetas con título, artistas, imagen, descripción y botón.
+- Aplicación de gradientes y sombras en botones e imágenes.
+- Uso de CSS Grid para organización de elementos en todas las resoluciones.
+- Comprobación visual en resoluciones intermedias: 470px, 665px, 999px, 1100px y 1500px.
+- Optimización y compresión de imágenes.
+
+---
+
+🔗 Demo del proyecto
+
 
 ---
 
